@@ -37,6 +37,11 @@ const handleVisitedFlag =(flag)=>
                     visitedCountries.map(country => <li key={country.cca3.cca3}>{country.name.common}</li>)
                 }
              </ol>
+             <div className='visited-flags-container'>
+                {
+                    VisitedFlags.map((flag,index) => <img key={index} src={flag}></img>)
+                }
+             </div>
             <div className='countries'>
 
             {
